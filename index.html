@@ -1,57 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booktrack</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
     <header id="header">
-        <h1 class="title-header">Book tracker</h1>
+      <h1 class="title-header">Book tracker</h1>
     </header>
-    
+
     <main class="container">
-        <!-- section controls -->
-         <section class="container-controls">
-            <button id="show-all">Show Books</button>
-            <button id="add-book">Add Book</button>
-            <button id="search-book">Search Book</button>
-         </section>
+      <!-- section controls -->
+      <section class="container-controls">
+        <button id="show-all">Show Books</button>
+        <button id="add-book">Add Book</button>
+        <button id="search-book">Search by book title</button>
+        <input id="title-search-book">
+      </section>
 
-         <section class="container-cards-books">
-            <article class="Book-card">
-                <div class="book-info">
+      <section class="container-cards-books">
+        <article class="Book-card">
+          <div class="book-info">
+            <img src="assets/list-books/javascript.jpg" />
+            <div class="info-content">
+              <div class="info-title">
+                <h3 class="book-title">.........</h3>
+                <label>Name book : </label>
+              </div>
 
-                    <img src = "assets/list-books/javascript.jpg">
-                    <div class="info-content">
-                                            <div class="info-title">
-                        <h3 class="book-title">.........</h3>
-                        <label>Name book: </label>
-                    </div>
+              <div class="info-type">
+                <h3 class="book-type">.........</h3>
+                <label>Type book : </label>
+              </div>
 
-                    <div class="info-type">
-                        <h3 class="book-type">.........</h3>
-                        <label>Type book: </label>
-                    </div>
+              <div class="info-author">
+                <p class="book-author">..............</p>
+                <label>Name author :</label>
+              </div>
+            </div>
+          </div>
 
-                    <div class="info-author">
-                        <p class="book-author">..............</p>
-                        <label>Name author:</label>
-                    </div>
-                    </div>
-                </div>
+          <div class="book-status">
+            <label>
+              <input type="radio" name="status" value="reading" />
+              Reading
+            </label>
 
-                <div class="book-status">
-                    <input type="radio" id="book-read">Reading</input>
-                    <input type="radio"  id="book-read">Read</button>
-                    <input type="radio"  id="book-remove">Remove Book</button>
-                </div>
+            <label>
+              <input type="radio" name="status" value="read" />
+              Read
+            </label>
 
-                
-            </article>
-         </section>
+            <label>
+              <input type="radio" name="status" value="remove" />
+              Remove Book
+            </label>
+          </div>
+        </article>
+
+                <article class="Book-card">
+          <div class="book-info">
+            <img src="assets/list-books/javascript.jpg" />
+            <div class="info-content">
+              <div class="info-title">
+                <h3 class="book-title">.........</h3>
+                <label>Name book : </label>
+              </div>
+
+              <div class="info-type">
+                <h3 class="book-type">.........</h3>
+                <label>Type book : </label>
+              </div>
+
+              <div class="info-author">
+                <p class="book-author">..............</p>
+                <label>Name author :</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-status">
+            <label>
+              <input type="radio" name="status" value="reading" />
+              Reading
+            </label>
+
+            <label>
+              <input type="radio" name="status" value="read" />
+              Read
+            </label>
+
+            <label>
+              <input type="radio" name="status" value="remove" />
+              Remove Book
+            </label>
+          </div>
+        </article>
+      </section>
+
 
     </main>
-</body>
+  </body>
 </html>
