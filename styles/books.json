@@ -1,0 +1,100 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "javascript",
+      "type": "educational",
+      "author": "Harper Lee",
+      "publishedYear": 1960,
+      "pages": 281,
+      "isbn": "978-0-06-112008-4",
+      "language": "fa",
+      "coverImage": "../assets/javascript.jpg",
+      "summary": "The JavaScript programming language training book takes you step by step."
+    },
+    {
+      "id": 2,
+      "name": "Teaching life skills",
+      "type": "Psychology",
+      "author": "George Orwell",
+      "publishedYear": 1949,
+      "pages": 328,
+      "isbn": "978-0-452-28423-4",
+      "language": "fa",
+      "coverImage": "../assets/life.jpg",
+      "summary": "A chilling prophecy about the future under totalitarian rule."
+    },
+    {
+      "id": 3,
+      "name": "English for adults",
+      "type": "educational",
+      "author": "Stephen Hawking",
+      "publishedYear": 1988,
+      "pages": 256,
+      "isbn": "978-0-553-10953-5",
+      "language": "en",
+      "coverImage": "../assets/novel-adult.jpg",
+      "summary": "An overview of cosmology, from the Big Bang to black holes."
+    },
+    {
+      "id": 4,
+      "name": "Learning PHP",
+      "type": "educationa",
+      "author": "F. Scott Fitzgerald",
+      "publishedYear": 1925,
+      "pages": 180,
+      "isbn": "978-0-7432-7356-5",
+      "language": "en",
+      "coverImage": "../assets/php.jpg",
+      "summary": "A critique of the American Dream set in the Roaring Twenties."
+    },
+    {
+      "id": 5,
+      "name": "How does psychology work?",
+      "type": "Psychology",
+      "author": "J. D. Salinger",
+      "publishedYear": 1951,
+      "pages": 214,
+      "isbn": "978-0-316-76948-0",
+      "language": "en",
+      "coverImage":"../assets/Psychology.jpg",
+      "summary": "A teenager’s cynical and alienated view of 1950s America."
+    },
+    {
+      "id": 6,
+      "name": "How to be a perfectionist",
+      "type": "Psychology",
+      "author": "Yuval Noah Harari",
+      "publishedYear": 2011,
+      "pages": 443,
+      "isbn": "978-0-06-231611-0",
+      "language": "en",
+      "coverImage": "../assets/Psychology1.jpg",
+      "summary": "Explores the ways in which biology and history have defined us."
+    },
+    {
+      "id": 7,
+      "name": "Learning React",
+      "type": "educationa",
+      "author": "J. R. R. Tolkien",
+      "publishedYear": 1937,
+      "pages": 310,
+      "isbn": "978-0-618-00221-3",
+      "language": "en",
+      "coverImage": "../assets/react.jpg",
+      "summary": "Bilbo Baggins’s adventure to win a share of the treasure guarded by Smaug."
+    },
+    {
+      "id": 8,
+      "name": "Learning Worpress",
+      "type": "Educational",
+      "author": "Ivelin Demirov",
+      "publishedYear": 2014,
+      "pages": 192,
+      "isbn": "978-1-939846-04-5",
+      "language": "en",
+      "coverImage": "../assets/wordpress.jpg",
+      "summary": "A picture-based guide to JavaScript for beginners."
+    }
+  ]
+}
