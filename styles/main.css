@@ -26,3 +26,78 @@ body{
     align-items: center;
     justify-content: center;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-controls button {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.container-cards-books{
+    background-color: rgb(231, 228, 228);
+    /* background: url(../assets/library.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    transition: filter 0.4s ease; */
+    display: flex;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: #333;
+}
+
+.container-cards-books.blur-bg{
+    filter: blur(8px);
+}
+
+
+.book-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.book-info img{
+    width: 100px;
+    height: 150px;
+}
+
+.info-title, .info-author ,.info-type {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5px;
+}
+
+.book-status {
+    display: flex;
+    gap: 20px; /* فاصله بین گزینه‌ها */
+    border: 1px solid #ececec;
+    background-color: #ffffffdd;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 15px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* سایه زیبا */
+    backdrop-filter: blur(4px); /* افکت شیشه‌ای نرم (اختیاری) */
+}
+
+.book-status label {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* فاصله بین دایره رادیو و متن */
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.book-status input[type="radio"] {
+    accent-color: #4c8cff; /* رنگ دکمه رادیو (پشتیبانی تمام مرورگرها) */
+    transform: scale(1.2); /* بزرگ‌تر شدن زیبا */
+}
