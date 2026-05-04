@@ -75,25 +75,43 @@ section.container-controls {
 }
 
 
-.container-cards-books{
-    background-color: rgb(231, 228, 228);
-    /* background: url(../assets/library.jpg) no-repeat center center;
-    background-size: cover;
-    position: relative;
-    transition: filter 0.4s ease; */
+#container-cards-books{
+    
+   
     display: flex;
     padding: 20px;
     margin-top: 30px;
     border-radius: 15px;
 }
+.pic-cover{
+    background: url(../assets/library.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    width: 50%;
+    height: 350px;
+}
 
-.container-cards-books.blur-bg{
+#container-cards-books.blur-bg{
     filter: blur(8px);
 }
+
+div#books-container {
+     transition: filter 0.4s ease; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(217, 215, 215);
+    margin: 15px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
 
 
 .book-info{
     display: flex;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     padding: 20px;
@@ -166,7 +184,7 @@ box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         font-size: 16px;
     }
 
-    .container-cards-books{
+    #container-cards-books{
         flex-direction: column;;
     }
 .container-controls button , #title-search-book{

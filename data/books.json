@@ -9,7 +9,7 @@
       "pages": 281,
       "isbn": "978-0-06-112008-4",
       "language": "fa",
-      "coverImage": "../assets/javascript.jpg",
+      "coverImage": "../assets/list-books/javascript.jpg",
       "summary": "The JavaScript programming language training book takes you step by step."
     },
     {
@@ -21,7 +21,7 @@
       "pages": 328,
       "isbn": "978-0-452-28423-4",
       "language": "fa",
-      "coverImage": "../assets/life.jpg",
+      "coverImage": "../assets/list-books/life.jpg",
       "summary": "A chilling prophecy about the future under totalitarian rule."
     },
     {
@@ -33,7 +33,7 @@
       "pages": 256,
       "isbn": "978-0-553-10953-5",
       "language": "en",
-      "coverImage": "../assets/novel-adult.jpg",
+      "coverImage": "../assets/list-books/novel-adult.jpg",
       "summary": "An overview of cosmology, from the Big Bang to black holes."
     },
     {
@@ -45,7 +45,7 @@
       "pages": 180,
       "isbn": "978-0-7432-7356-5",
       "language": "en",
-      "coverImage": "../assets/php.jpg",
+      "coverImage": "../assets/list-books/php.jpg",
       "summary": "A critique of the American Dream set in the Roaring Twenties."
     },
     {
@@ -57,7 +57,7 @@
       "pages": 214,
       "isbn": "978-0-316-76948-0",
       "language": "en",
-      "coverImage":"../assets/Psychology.jpg",
+      "coverImage":"../assets/list-books/Psychology.jpg",
       "summary": "A teenager’s cynical and alienated view of 1950s America."
     },
     {
@@ -69,7 +69,7 @@
       "pages": 443,
       "isbn": "978-0-06-231611-0",
       "language": "en",
-      "coverImage": "../assets/Psychology1.jpg",
+      "coverImage": "../assets/list-books/Psychology1.jpg",
       "summary": "Explores the ways in which biology and history have defined us."
     },
     {
@@ -81,7 +81,7 @@
       "pages": 310,
       "isbn": "978-0-618-00221-3",
       "language": "en",
-      "coverImage": "../assets/react.jpg",
+      "coverImage": "../assets/list-books/react.jpg",
       "summary": "Bilbo Baggins’s adventure to win a share of the treasure guarded by Smaug."
     },
     {
@@ -93,7 +93,7 @@
       "pages": 192,
       "isbn": "978-1-939846-04-5",
       "language": "en",
-      "coverImage": "../assets/wordpress.jpg",
+      "coverImage": "../assets/list-books/wordpress.jpg",
       "summary": "A picture-based guide to JavaScript for beginners."
     }
   ]

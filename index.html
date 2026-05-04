@@ -20,23 +20,24 @@
         <input id="title-search-book">
       </section>
 
-      <section class="container-cards-books">
+      <div id="books-container" class="pic-cover"></div>
+      <template id="container-cards-books">
         <article class="Book-card">
           <div class="book-info">
-            <img src="assets/list-books/javascript.jpg" />
+            <img src="" class="book-cover" />
             <div class="info-content">
               <div class="info-title">
-                <h3 class="book-title">.........</h3>
+                <h3 class="book-title"></h3>
                 <label>Name book : </label>
               </div>
 
               <div class="info-type">
-                <h3 class="book-type">.........</h3>
+                <h3 class="book-type"></h3>
                 <label>Type book : </label>
               </div>
 
               <div class="info-author">
-                <p class="book-author">..............</p>
+                <p class="book-author"></p>
                 <label>Name author :</label>
               </div>
             </div>
@@ -60,45 +61,7 @@
           </div>
         </article>
 
-                <article class="Book-card">
-          <div class="book-info">
-            <img src="assets/list-books/javascript.jpg" />
-            <div class="info-content">
-              <div class="info-title">
-                <h3 class="book-title">.........</h3>
-                <label>Name book : </label>
-              </div>
-
-              <div class="info-type">
-                <h3 class="book-type">.........</h3>
-                <label>Type book : </label>
-              </div>
-
-              <div class="info-author">
-                <p class="book-author">..............</p>
-                <label>Name author :</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="book-status">
-            <label>
-              <input type="radio" name="status" value="reading" />
-              Reading
-            </label>
-
-            <label>
-              <input type="radio" name="status" value="read" />
-              Read
-            </label>
-
-            <label>
-              <input type="radio" name="status" value="remove" />
-              Remove Book
-            </label>
-          </div>
-        </article>
-      </section>
+      </template>
 
 
     </main>

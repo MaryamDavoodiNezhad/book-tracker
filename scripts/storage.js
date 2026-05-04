@@ -6,12 +6,13 @@ export async function loadBooks() {
                        }
         
             const data = await response.json();
-            return data;
+            return data.books || [];
             
 
     }
     catch(error){
         console.error("fetching has error", error);
+        return[];    // که ui هنگ نکند
     }
     
 }
