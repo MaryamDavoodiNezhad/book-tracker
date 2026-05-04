@@ -1,9 +1,17 @@
 import {loadBooks} from './storage.js';
+import {renderBook} from './ui.js';
 
-document.getElementById("show-books").addEventListener("click" ,async ()=>{
-    console.log("data");
-    
-    const allBooks = await loadBooks();
-    console.log(allBooks);    
-    
+window.addEventListener('DOMContentLoaded' , ()=>{
+    const btnShow = document.getElementById('show-books');
+    if(!btnShow)return
+
+    btnShow.addEventListener('click' , async()=>{
+        // Loading data
+        const allBooks = await loadBooks();
+        console.log(allBooks);
+
+        // Render books
+        renderBook(allBooks);
+        
+    })
 })
