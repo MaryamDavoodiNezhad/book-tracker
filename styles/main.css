@@ -125,6 +125,9 @@ div#books-container {
   display: flex;
   padding: 5px;
 }
+.info-title h3{
+    font-size: 16px;
+}
 
 .book-status {
   display: flex;
@@ -152,13 +155,13 @@ div#books-container {
   transform: scale(1.2); /* بزرگ‌تر شدن زیبا */
 }
 article.Book-card {
-  min-width: 220px;
-  margin: 10px;
+  flex: 1 0 220px;
+  margin: 20px;
   background-color: white;
   max-width: 40%;
   transition:
-    transform 0.2s,
-    box-shadow 0.2s;
+  transform 0.2s,
+  box-shadow 0.2s;
 }
 .Book-card:hover {
   transform: translateY(-4px);
@@ -216,4 +219,30 @@ button#delete {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* style controls */
+
+/* read*/
+.Book-card.read {
+  border-color: #4caf50;
+  background-color: #e8f5e9;
+  opacity: 0.8;
+}
+
+/* reading*/
+.Book-card.reading {
+  border-color: #ff9800;
+  background-color: #fff3e0;
+}
+
+/* delete (fade out) */
+.Book-card.Unread {
+  border-color: #f44336;
+  background-color: #ffebee;
+}
+
+.Book-card.fade-out {
+  opacity: 0;
+  transform: scale(0.9);
 }
