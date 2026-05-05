@@ -1,70 +1,72 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    color: #333;
-}
-
-#header{
-    background: url(../assets/header.jpg) center no-repeat;
-    width: 100%;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 232px;
+body {
+  color: #333;
 }
 
+#header {
+  background: url(../assets/header.jpg) center no-repeat;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 232px;
+}
 
 .title-header {
-    font-size: 55px;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: 55px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 section.container-controls {
-    display: inline-block;
-    text-align: center;
+  display: inline-block;
+  text-align: center;
 }
-#title-search-book{
-    padding: 15px;
-    border: 1px solid black;
-    border-radius: 15px;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 20px;
+#title-search-book {
+  padding: 15px;
+  border: 1px solid #09ee47;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
 }
 
 .container-controls button {
-    padding: 15px;
-    border: 1px solid black;
-    border-radius: 15px;
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 20px;
-    cursor: pointer;
+  padding: 15px;
+  border: 1px solid #928f8f;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
 
-
-    transition: background-color 0.3s ease-in-out,
-     color 0.3s ease-in-out,
-     transform 0.2s ease;   /* ← بدون ویرگول بعد از ease */
-    
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    transform 0.2s ease; /* ← بدون ویرگول بعد از ease */
 }
 /* حالت هاور برای دکمه‌ها */
-.container-controls button:hover{
+.container-controls button:hover {
   background-color: black;
   color: white;
   transform: translateY(-2px);
+}
+
+label {
+  font-size: 16px;
 }
 
 /* حالت فعال (فشار دادن) */
@@ -74,131 +76,144 @@ section.container-controls {
   /* می‌توانید رنگ یا سایه نیز اضافه کنید */
 }
 
-
-#container-cards-books{
-    
-   
-    display: flex;
-    padding: 20px;
-    margin-top: 30px;
-    border-radius: 15px;
+#container-cards-books {
+  display: flex;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 15px;
 }
-.pic-cover{
-    background: url(../assets/library.jpg) no-repeat center center;
-    background-size: cover;
-    position: relative;
-    width: 50%;
-    height: 350px;
+.pic-cover {
+  background: url(../assets/library.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 50%;
+  height: 350px;
 }
 
-#container-cards-books.blur-bg{
-    filter: blur(8px);
+#container-cards-books.blur-bg {
+  filter: blur(8px);
 }
 
 div#books-container {
-     transition: filter 0.4s ease; 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(217, 215, 215);
-    margin: 15px;
-    border-radius: 15px;
-    padding: 20px;
+  transition: filter 0.4s ease;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(217, 215, 215);
+  margin: 15px;
+  border-radius: 15px;
+  padding: 20px;
 }
 
-
-
-.book-info{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
+.book-info {
+  display: flex;
+  justify-content: center;
+  flex-direction:row-reverse;
+  align-items: center;
+  padding: 20px;
 }
 
-.book-info img{
-    width: 100px;
-    height: 150px;
+.book-info img {
+  width: 100px;
+  height: 150px;
 }
 
-.info-title, .info-author ,.info-type {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 5px;
+.info-title,
+.info-author,
+.info-type {
+  display: flex;
+  padding: 5px;
 }
 
 .book-status {
-    display: flex;
-    gap: 20px; /* فاصله بین گزینه‌ها */
-    border: 1px solid #ececec;
-    background-color: #ffffffdd;
-    border-radius: 15px;
-    padding: 15px 20px;
-    margin: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* سایه زیبا */
-    backdrop-filter: blur(4px); /* افکت شیشه‌ای نرم (اختیاری) */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* فاصله بین گزینه‌ها */
+  border: 1px solid #ececec;
+  background-color: #ffffffdd;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* سایه زیبا */
+  backdrop-filter: blur(4px); /* افکت شیشه‌ای نرم (اختیاری) */
 }
 
 .book-status label {
-    display: flex;
-    align-items: center;
-    gap: 6px; /* فاصله بین دایره رادیو و متن */
-    font-size: 15px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px; /* فاصله بین دایره رادیو و متن */
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .book-status input[type="radio"] {
-    accent-color: #4c8cff; /* رنگ دکمه رادیو (پشتیبانی تمام مرورگرها) */
-    transform: scale(1.2); /* بزرگ‌تر شدن زیبا */
+  accent-color: #4c8cff; /* رنگ دکمه رادیو (پشتیبانی تمام مرورگرها) */
+  transform: scale(1.2); /* بزرگ‌تر شدن زیبا */
 }
 article.Book-card {
-    margin: 10px;
-    background-color:white;
-    max-width: 320px;
-    transition: transform 0.2s, box-shadow 0.2s;
-
+  min-width: 220px;
+  margin: 10px;
+  background-color: white;
+  max-width: 40%;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 .Book-card:hover {
-transform: translateY(-4px);
-box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-
 
 /* responsive mobile */
-@media (max-width : 768px) {
-    #header{
-        background-size: cover;
-        height: 95px;
-    }
-    .title-header {
-        font-size: 25px;
-    }
+@media (max-width: 768px) {
+  #header {
+    background-size: cover;
+    height: 95px;
+  }
+  .title-header {
+    font-size: 25px;
+  }
 
-    .container {
-        grid-template-columns: 1fr;
+  .container {
+    grid-template-columns: 1fr;
+  }
 
-    }
-
-    .container-controls button , #title-search-book{
-        font-size: 16px;
-    }
-
-    #container-cards-books{
-        flex-direction: column;;
-    }
-.container-controls button , #title-search-book{
+  .container-controls button,
+  #title-search-book {
     font-size: 16px;
-}
-.book-info{
+  }
+
+  #container-cards-books {
     flex-direction: column;
-}
-.book-info img{
+  }
+  .container-controls button,
+  #title-search-book {
+    font-size: 16px;
+  }
+  .book-info {
+    flex-direction: column;
+  }
+  .book-info img {
     width: 70%;
     height: auto;
-}
-article.Book-card {
+  }
+  article.Book-card {
     max-width: none;
-}
+  }
 }
 
+button#delete {
+  padding: 10px 94px;
+  border-radius: 15px;
+  border: 1px solid ghostwhite;
+  cursor: pointer;
+}
+#delete:hover {
+    background-color: red;
+}
+.removeBook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -17,7 +17,7 @@
         <button id="show-books">Show Books</button>
         <button id="add-book">Add Book</button>
         <button id="search-book">Search by book title</button>
-        <input id="title-search-book">
+        <input id="title-search-book" />
       </section>
 
       <div id="books-container" class="pic-cover"></div>
@@ -27,18 +27,21 @@
             <img src="" class="book-cover" />
             <div class="info-content">
               <div class="info-title">
-                <h3 class="book-title"></h3>
+                
                 <label>Name book : </label>
+                <h3 class="book-title"></h3>
               </div>
 
               <div class="info-type">
-                <h3 class="book-type"></h3>
+                
                 <label>Type book : </label>
+                <h3 class="book-type"></h3>
               </div>
 
               <div class="info-author">
-                <p class="book-author"></p>
+                
                 <label>Name author :</label>
+                <p class="book-author"></p>
               </div>
             </div>
           </div>
@@ -55,15 +58,15 @@
             </label>
 
             <label>
-              <input type="radio" name="status" value="remove" />
-              Remove Book
+              <input type="radio" name="status" value="Un read" />
+              UnRead Book
             </label>
+            <div class="removeBook">
+              <button id="delete">Remove</button>
+            </div>
           </div>
         </article>
-
       </template>
-
-
     </main>
     <script type="module" src="scripts/storage.js"></script>
     <script type="module" src="scripts/app.js"></script>
