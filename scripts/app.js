@@ -1,5 +1,5 @@
-import {loadBooks} from './storage.js';
-import {renderBook} from './ui.js';
+import {loadBooks, saveBook} from './storage.js';
+import {renderBook,statusHandlers} from './ui.js';
 
 window.addEventListener('DOMContentLoaded' , ()=>{
     const btnShow = document.getElementById('show-books');
@@ -8,10 +8,17 @@ window.addEventListener('DOMContentLoaded' , ()=>{
     btnShow.addEventListener('click' , async()=>{
         // Loading data
         const allBooks = await loadBooks();
-        console.log(allBooks);
+        // console.log(allBooks);
 
         // Render books
         renderBook(allBooks);
-        
+        statusHandlers(allBooks);
+
+        // اگر برای اولین بار از JSON آمد، ذخیره کن
+    if (!localStorage.getItem("books")) {
+        saveBook(allBooks);
+}
     })
 })
+
+// check read - reading - unread - remove
