@@ -131,8 +131,8 @@ div#books-container {
 
 .book-status {
   display: flex;
-  flex-direction: column;
-  gap: 20px; /* فاصله بین گزینه‌ها */
+  flex-wrap: wrap;
+  gap: 20px 40px; /* فاصله بین گزینه‌ها */
   border: 1px solid #ececec;
   background-color: #ffffffdd;
   border-radius: 15px;
@@ -154,7 +154,7 @@ div#books-container {
   accent-color: #4c8cff; /* رنگ دکمه رادیو (پشتیبانی تمام مرورگرها) */
   transform: scale(1.2); /* بزرگ‌تر شدن زیبا */
 }
-article.Book-card {
+article.book-card {
   flex: 1 0 220px;
   margin: 20px;
   background-color: white;
@@ -163,7 +163,7 @@ article.Book-card {
   transform 0.2s,
   box-shadow 0.2s;
 }
-.Book-card:hover {
+.book-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
@@ -201,21 +201,21 @@ article.Book-card {
     width: 70%;
     height: auto;
   }
-  article.Book-card {
+  article.book-card {
     max-width: none;
   }
 }
 
-button#delete {
+button.btnSave {
   padding: 10px 94px;
   border-radius: 15px;
   border: 1px solid ghostwhite;
   cursor: pointer;
 }
-#delete:hover {
-    background-color: red;
+.btnSave:hover {
+    background-color: rgb(28, 172, 6);
 }
-.removeBook {
+.save {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,25 +224,26 @@ button#delete {
 /* style controls */
 
 /* read*/
-.Book-card.read {
+.book-card.read {
   border-color: #4caf50;
   background-color: #e8f5e9;
   opacity: 0.8;
 }
 
 /* reading*/
-.Book-card.reading {
+.book-card.reading {
   border-color: #ff9800;
   background-color: #fff3e0;
 }
 
 /* delete (fade out) */
-.Book-card.Unread {
+.book-card.Unread {
   border-color: #f44336;
   background-color: #ffebee;
 }
 
-.Book-card.fade-out {
+.book-card.fade-out {
   opacity: 0;
   transform: scale(0.9);
 }
+

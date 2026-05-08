@@ -22,24 +22,21 @@
 
       <div id="books-container" class="pic-cover"></div>
       <template id="container-cards-books">
-        <article class="Book-card">
+        <article class="book-card">
           <div class="book-info">
             <img src="" class="book-cover" />
             <div class="info-content">
               <div class="info-title">
-                
                 <label>Name: </label>
                 <h3 class="book-title"></h3>
               </div>
 
               <div class="info-type">
-                
                 <label>Type: </label>
                 <h3 class="book-type"></h3>
               </div>
 
               <div class="info-author">
-                
                 <label>author:</label>
                 <p class="book-author"></p>
               </div>
@@ -58,18 +55,23 @@
             </label>
 
             <label>
-              <input type="radio" name="status" value="Unread" />
+              <input
+                type="radio"  name="status" value="unread"/>
               UnRead Book
             </label>
-            <div class="removeBook">
-              <button id="delete">Remove</button>
+
+            <label>
+              <input
+                type="radio"   name="status"  value="remove"/>
+                Remove
+              </label>
+            <div class="save">
+              <button class="btnSave">Save</button>
             </div>
           </div>
         </article>
       </template>
     </main>
-    <script type="module" src="scripts/storage.js"></script>
-    <script type="module" src="scripts/app.js"></script>
     <script type="module" src="scripts/app.js"></script>
   </body>
 </html>
